@@ -1,0 +1,27 @@
+PROGRAM RataRataBeratKoper
+
+KAMUS
+N : integer
+i : integer
+beratKoper : real
+totalBerat : real
+rataRata : real
+
+ALGORITMA
+input(N)
+
+i ← 1
+totalBerat ← 0
+
+while i <= N do
+    input(beratKoper)
+
+    totalBerat ← totalBerat + beratKoper
+
+    i ← i + 1
+endwhile
+
+rataRata ← totalBerat / N
+
+output(totalBerat)
+output(rataRata)

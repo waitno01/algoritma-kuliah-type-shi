@@ -1,0 +1,18 @@
+PROGRAM Temperatur
+
+KAMUS
+celcius : real
+reamur : real
+fahrenheit : real
+kelvin : real
+
+ALGORITMA
+input(celcius)
+
+reamur ← celcius * 4 / 5
+fahrenheit ← celcius * 9 / 5 + 32
+kelvin ← celcius + 273.15
+
+output(reamur)
+output(fahrenheit)
+output(kelvin)

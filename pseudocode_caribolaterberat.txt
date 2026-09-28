@@ -1,0 +1,31 @@
+PROGRAM CariBolaTerberat
+
+KAMUS
+bolaA : real
+bolaB : real
+bolaC : real
+bolaD : real
+kandidat1 : real
+kandidat2 : real
+bolaTerberat : real
+
+ALGORITMA
+if bolaA > bolaB then
+    kandidat1 ← bolaA
+else
+    kandidat1 ← bolaB
+endif
+
+if bolaC > bolaD then
+    kandidat2 ← bolaC
+else
+    kandidat2 ← bolaD
+endif
+
+if kandidat1 > kandidat2 then
+    bolaTerberat ← kandidat1
+else
+    bolaTerberat ← kandidat2
+endif
+
+output(bolaTerberat)

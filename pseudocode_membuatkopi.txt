@@ -1,0 +1,31 @@
+PROGRAM MembuatKopi
+
+KAMUS
+kopiTersedia : boolean
+gulaTersedia : boolean
+
+ALGORITMA
+kopiTersedia ← true
+gulaTersedia ← true
+
+while kopiTersedia = true AND gulaTersedia = true do
+    ambil cangkir
+    masukkan kopi ke cangkir
+    masukkan gula ke cangkir
+    tuangkan air panas
+    aduk menggunakan sendok
+    sajikan kopi
+
+    periksa persediaan kopi
+    periksa persediaan gula
+
+    jika kopi habis maka
+        kopiTersedia ← false
+    endif
+
+    jika gula habis maka
+        gulaTersedia ← false
+    endif
+endwhile
+
+output("Pembuatan kopi dihentikan")

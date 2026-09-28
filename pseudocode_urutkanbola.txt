@@ -1,0 +1,37 @@
+PROGRAM UrutkanBola
+
+KAMUS
+bola1 : integer
+bola2 : integer
+bola3 : integer
+temp : integer
+
+ALGORITMA
+ambil bola pertama
+bola1 ← angka pada bola pertama
+
+ambil bola kedua
+bola2 ← angka pada bola kedua
+
+ambil bola ketiga
+bola3 ← angka pada bola ketiga
+
+if bola1 > bola2 then
+    temp ← bola1
+    bola1 ← bola2
+    bola2 ← temp
+endif
+
+if bola1 > bola3 then
+    temp ← bola1
+    bola1 ← bola3
+    bola3 ← temp
+endif
+
+if bola2 > bola3 then
+    temp ← bola2
+    bola2 ← bola3
+    bola3 ← temp
+endif
+
+output(bola1, bola2, bola3)
